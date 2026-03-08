@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "ab-don", sans-serif;
+}
+
+* {
+    cursor: url('/cursor.png'), auto;
+}
+
+*:active {
+    cursor: url('/cursor_active.png'), auto;
+}
