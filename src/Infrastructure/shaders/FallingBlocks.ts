@@ -63,7 +63,7 @@ export class FallingBlocks {
     }
 
     // 毎フレーム呼び出す
-    public update(scene: Object3D) {
+    public update(_scene: Object3D) {
         this.blocks.forEach((block) => {
             block.mesh.position.y -= block.speedY;
             block.mesh.rotation.z += block.speedR;

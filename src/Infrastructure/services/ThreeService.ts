@@ -49,7 +49,7 @@ export class ThreeService {
         
         // FallingBlocksを初期化
         this.fallingBlocks = new FallingBlocks([
-            blockYellow, blockBlue, blockGreen, blockBlue,
+            blockYellow, blockPink, blockGreen, blockBlue,
         ]);
         this.fallingBlocks.create(this.scene, 20);
         
