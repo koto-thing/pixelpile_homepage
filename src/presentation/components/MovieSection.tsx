@@ -13,7 +13,7 @@ export const MovieSection = () => {
             />
 
             {/* セクションのタイトル */}
-            <h2 className="relative z-10 text-blank text-3xl font-display tracking-widest">
+            <h2 className="relative z-10 text-blank text-3xl font-display tracking-widest drop-shadow">
                 宣伝ムービー
             </h2>
 

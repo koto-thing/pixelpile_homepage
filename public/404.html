@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>pixelpile_homepage</title>
+    <script>
+      var l = window.location;
+      var pathSegments = l.pathname.split('/');
+      var subPath = pathSegments.slice(2).join('/');
+
+      if (!subPath || subPath === '') {
+        // トップページはそのままリダイレクト
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/pixelpile_homepage/');
+      } else {
+        // サブページは?p=パラメータ付きでindex.html へ
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/pixelpile_homepage/?p=/' + subPath.replace(/&/g, '~and~') +
+          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
+

@@ -19,7 +19,7 @@ export const ProductSection = () => {
             />
 
             {/* セクションのタイトル */}
-            <h2 className="relative z-10 text-black text-3xl font-display tracking-widest">
+            <h2 className="relative z-10 text-black text-3xl font-display tracking-widest drop-shadow">
                 作品情報
             </h2>
 
@@ -38,22 +38,22 @@ export const ProductSection = () => {
                         <div key={info.label} className="flex gap-4 border-b border-black/20 pb-3">
 
                             {/* ラベル */}
-                            <p className="font-display text-xs md:text-sm text-gray-500 text-right w-32 shrink-0">
+                            <p className="font-display text-xs md:text-sm text-gray-500 text-right w-32 shrink-0 drop-shadow">
                                 {info.label}
                             </p>
 
                             {/* 値 */}
-                            <div className="font-display text-xs md:text-sm text-block">
+                            <div className="font-display text-xs md:text-sm text-block drop-shadow">
                                 {isMemberInfoArray(info.value)
                                     ? info.value.map((member) => (
-                                        <p key={member.name} className="flex items-center gap-1">
+                                        <p key={member.name} className="flex items-center gap-1 drop-shadow">
                                             {member.url
                                                 ? (
                                                     <a
                                                         href={member.url}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="flex items-center gap-1 hover:underline hover:text-blue-600 transition-colors"
+                                                        className="flex items-center gap-1 hover:underline hover:text-blue-600 transition-colors drop-shadow"
                                                     >
                                                         {member.name}
                                                         {/* 外部リンクアイコン */}

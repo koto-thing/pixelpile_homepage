@@ -13,7 +13,7 @@ export const NewsSection = () => {
             />
             
             {/* セクションタイトル */}
-            <h2 className="text-black text-3xl font-display tracking-widest">
+            <h2 className="text-black text-3xl font-display tracking-widest drop-shadow">
                 最新情報
             </h2>
 
@@ -26,7 +26,7 @@ export const NewsSection = () => {
                     {newsItems.map((item) => (
                         <div 
                             key={item.id}
-                            className="flex flex-col gap-2 w-56 cursor-pointer hover:opacity-80 transition-opacity"
+                            className="flex flex-col gap-2 w-56 cursor-pointer hover:opacity-80 transition-opacity drop-shadow"
                         >
                             {/* サムネイル */}
                             <div className="relative">
@@ -38,8 +38,8 @@ export const NewsSection = () => {
                             </div>
 
                             {/* 日付とタイトル */}
-                            <p className="text-gray-400 text-xs font-display">{item.date}</p>
-                            <p className="text-black text-sm font-display">{item.title}</p>
+                            <p className="text-gray-400 text-xs font-display drop-shadow">{item.date}</p>
+                            <p className="text-black text-sm font-display drop-shadow">{item.title}</p>
                         </div>
                     ))}
                     

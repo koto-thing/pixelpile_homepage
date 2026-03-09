@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pixelpile_homepage</title>
 
+    <!-- GitHub Pages BrowserRouter リダイレクト受け取りスクリプト -->
+    <script>
+      (function() {
+        var l = window.location;
+        if (l.search && l.search.indexOf('?p=') === 0) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          });
+          var subPath = decoded[0].slice(2);
+          var query = decoded[1] ? '?' + decoded[1].slice(2) : '';
+          if (subPath && subPath !== '/') {
+            history.replaceState(null, null, '/pixelpile_homepage' + subPath + query + l.hash);
+          }
+        }
+      })();
+    </script>
     <script>
       (function(d) {
         var config = {
