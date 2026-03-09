@@ -5,7 +5,7 @@ export type DownloadItem = {
     platform: string;
     logoUrl: string;
     price: string;
-    url: string;
+    downloadUrl: string;
     note?: string;
 };
 
@@ -23,12 +23,12 @@ export const downloadSections: DownloadSection[] = [
         overlayColor: "rgba(150,210,255,0.4)",
         items: [
             {
-                id:       1,
-                platform: "Steam",
-                logoUrl:  SteamLogo,
-                price:    "基本無料",
-                url:      "https://store.steampowered.com/",
-                note:     "Windows 10/11のみ対応"
+                id:          1,
+                platform:    "Steam",
+                logoUrl:     SteamLogo,
+                price:       "基本無料",
+                downloadUrl: "https://store.steampowered.com/",
+                note:        "Windows 10/11のみ対応"
             },
         ],
     },

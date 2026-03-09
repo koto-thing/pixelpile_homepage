@@ -1,4 +1,4 @@
-﻿import { howToPlaySections } from "../../domain/entities/HowToPlayData";
+﻿import { howToPlaySections } from "../../domain/entities/howToPlayData";
 
 export const HowToPlayPage = () => {
     return (

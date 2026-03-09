@@ -1,5 +1,5 @@
-﻿import { productInfos } from "../../domain/entities/ProductData";
-import type { MemberInfo } from "../../domain/entities/ProductData";
+﻿import { productInfos } from "../../domain/entities/productData";
+import type { MemberInfo } from "../../domain/entities/productData";
 import packageImage from "../../assets/PixelPileLogo.png";
 
 // MemberInfo[] かどうか判定するタイプガード
