@@ -17,8 +17,8 @@ export const productInfos: ProductInfo[] = [
     { label: "開発メンバー",   value: [
         { name: "ぼたもち", url: "" },
         { name: "wasabi",   url: "https://wasabi4767.github.io/portfolio/" },
-        { name: "Ryota",    url: "" },
+        { name: "Ryota",    url: "https://ryotaizumi.github.io/portfolio/" },
         { name: "lumi",     url: "https://lumi-snow.github.io/myPortfolio.html" },
-        { name: "こと",     url: "https://koto-thing.com/portfolio/" },
+        { name: "こと",     url: "https://koto-thing.com/Portfolio/" },
     ] as MemberInfo[] },
 ]
