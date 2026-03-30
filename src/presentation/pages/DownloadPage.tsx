@@ -65,6 +65,21 @@ export const DownloadPage = () => {
                                 <div className="border border-black text-black px-8 py-2 text-sm font-display hover:bg-black hover:text-white transition-colors drop-shadow">
                                     ダウンロード
                                 </div>
+
+                                {/* QRコード（スマホでストアを開きたい場合に利用） */}
+                                {item.qrCodeUrl && (
+                                    <div className="flex flex-col items-center gap-2 pt-2">
+                                        <img
+                                            src={item.qrCodeUrl}
+                                            alt={`${item.platform} ストアQRコード`}
+                                            className="w-28 h-28 border border-black/20 bg-white p-1"
+                                            loading="lazy"
+                                        />
+                                        <p className="font-display text-[10px] text-gray-500 text-center">
+                                            スマホはこちら
+                                        </p>
+                                    </div>
+                                )}
                             </a>
                         ))}
                     </div>

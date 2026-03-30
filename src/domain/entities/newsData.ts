@@ -19,7 +19,7 @@ export const newsItems: NewsItem[] = [
         body: `
 ## 公式サイトを公開しました！
 
-PixelPileの公式サイトを公開しました。
+Pixel Pileの公式サイトを公開しました。
 今後も情報を更新していきますのでお楽しみに。
 
 ![スクリーンショット](/pixelpile_homepage/news/PageTopBottom.png)
@@ -29,5 +29,21 @@ PixelPileの公式サイトを公開しました。
 - あそびかたページの追加
 - ギャラリーの追加
         `,
+    },
+    {
+        id:2,
+        date: "2026.03.30",
+        title: "Pixel PileがSteamで配信開始！",
+        imageUrl: PageTop,
+        isNew: true,
+        body: `
+## Pixel PileがSteamで配信開始しました！
+
+Pixel PileがSteamにて配信開始しました！  
+近日中にver2.0.0がアップデートされる予定です。  
+おたのしみに！
+
+![スクリーンショット](/pixelpile_homepage/news/SteamPage.png)
+        `
     }
 ];

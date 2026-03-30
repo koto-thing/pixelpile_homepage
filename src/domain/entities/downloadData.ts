@@ -6,6 +6,7 @@ export type DownloadItem = {
     logoUrl: string;
     price: string;
     downloadUrl: string;
+    qrCodeUrl?: string;
     note?: string;
 };
 
@@ -28,6 +29,7 @@ export const downloadSections: DownloadSection[] = [
                 logoUrl:     SteamLogo,
                 price:       "基本無料",
                 downloadUrl: "https://store.steampowered.com/",
+                qrCodeUrl:   "https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fstore.steampowered.com%2F",
                 note:        "Windows 10/11のみ対応"
             },
         ],
