@@ -11,14 +11,14 @@ type ProductInfo = {
 export const productInfos: ProductInfo[] = [
     { label: "タイトル",       value: "PixelPile" },
     { label: "ジャンル",       value: "落ちものパズルゲーム" },
-    { label: "配信予定日",     value: "2026年3月下旬" },
+    { label: "配信開始日",     value: "2026年3月下旬" },
     { label: "対応機種・価格", value: ["Steam 基本無料"] },
     { label: "開発",           value: "会津大学企画開発部" },
     { label: "開発メンバー",   value: [
-        { name: "ぼたもち", url: "" },
+        { name: "ぼたもち", url: "https://botamochi1111.github.io/portfolio/" },
         { name: "wasabi",   url: "https://wasabi4767.github.io/portfolio/" },
         { name: "Ryota",    url: "https://ryotaizumi.github.io/portfolio/" },
         { name: "lumi",     url: "https://sites.google.com/view/sasakiportfolio" },
-        { name: "こと",     url: "https://koto-thing.com/Portfolio/" },
+        { name: "こと",     url: "https://portfolio.koto-thing.com/" },
     ] as MemberInfo[] },
 ]
