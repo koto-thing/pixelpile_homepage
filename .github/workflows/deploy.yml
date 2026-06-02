@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master # masterブランチにプッシュされた時に実行
+      - master
 
 jobs:
   build-and-deploy:
